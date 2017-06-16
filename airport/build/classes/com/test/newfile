@@ -1,0 +1,31 @@
+//用户信息表 
+create table user
+  (Username varchar(20) not null, 
+  Password varchar(16) not null,
+  Name varchar(10) not null,
+  Sex varchar(2) not null,
+  Tel varchar(16) not null,
+  Email varchar(30),
+  primary key(username));
+//制定航班表
+create table sch
+(Hao varchar(10) not null,
+Qifei varchar(20) not null,
+Rqi date ,
+Mudi varchar(20) not null,
+Jiage int(5) not null,
+Piaosu int not null,
+primary key(Hao));
+//订票表
+create table din
+(   Id varchar(20) not null,
+    Hao varchar(10) not null,
+    Qifei varchar(20) not null,
+    Mudi varchar(20) not null,
+    Rqi varchar(20) not null,
+    Jiage varchar(10) not null,
+    Piao int not null );
+
+
+
+ 

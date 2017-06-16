@@ -1,0 +1,51 @@
+
+
+drop table reserveflight;
+drop table flight;
+drop table userinfo;
+
+	 create table userinfo (
+   userid number(8,0) not null enable, 
+	username varchar2(12 byte), 
+	realname varchar2(12 byte), 
+	password varchar2(20 byte), 
+	sex varchar2(4 byte), 
+	age number(5,0), 
+	email varchar2(23 byte), 
+	ismanager varchar2(12 byte), 
+	 constraint userinfo_pk primary key (userid));
+
+
+  create table flight (
+  flightid number(12,0) not null enable, 
+	flightno varchar2(20 byte), 
+	flighttype varchar2(20 byte), 
+	leavetime varchar2(20 byte), 
+	arrivetime varchar2(20 byte), 
+	qdzhan     varchar2(20 byte), 
+	zhdzhan    varchar2(20 byte), 
+	softtotal number(12,0),
+	hardtotal number(12,0),
+	softprice number(12,0),
+	hardprice number(12,0),
+	 constraint flight_pk primary key (flightid));
+	 
+	 
+  create table reserveflight 
+   (	reservid number(8,0) not null enable, 
+	reservtime date not null enable, 
+	softnumber number(12,0),
+	hardnumber number(12,0),
+	totalprices number(12,0),
+	userid number(9,0) not null enable, 
+	flightid number(9,0) not null enable, 
+	 constraint reserveflight_pk primary key (reservid), 
+	 constraint fk_userid foreign key (userid)
+	  references userinfo (userid) enable, 
+	 constraint flightid foreign key (flightid)
+	  references flight (flightid) enable
+   );
+	 
+	 
+
+commit;
