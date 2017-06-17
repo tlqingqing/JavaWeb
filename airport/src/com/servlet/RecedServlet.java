@@ -37,7 +37,7 @@ public class RecedServlet extends HttpServlet
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException
     {
-        response.setContentType("text/html;charset=UTF-8");
+        response.setContentType("text/html;charset=gb2312");
         PrintWriter out = response.getWriter();
         // 获得用户所要退的航班号
         String hao=request.getParameter("hao");

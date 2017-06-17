@@ -10,15 +10,15 @@ public final class JDBconne
   
       public static Connection getConnetion()
       {	
-          String url = "jdbc:mysql://localhost:3306/testhangban";
+          String url = "jdbc:mysql://localhost:3306/testhangban?characterEncoding=gb2312";
           String user = "root";
           String password = "fan3394";
 
                     try
                     {
-                            // ×¢²áÇý¶¯
+                            // å¨‰ã„©ï¿½ï¿½ï¿½ã‚†ï¿½çƒ½ï¿½ï¿½ï¿½ã‚†ï¿½çƒ½ï¿½ï¿½ï¿½ã‚†ï¿½ï¿½
                             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-                            // »ñµÃÁ¬½Ó¶ÔÏó
+                            // ï¿½ï¿½ï¿½ã‚†ï¿½çƒ½ï¿½ï¿½ï¿½ã‚†ï¿½çƒ½ï¿½ï¿½ï¿½ã‚†ï¿½èœ‚å‰‘ï¿½ï¿½ï¿½ã‚†ï¿½çƒ½ï¿½ï¿½é”Ÿï¿½
                             connection = DriverManager.getConnection(url, user, password);
                     }
                     catch (SQLException e)

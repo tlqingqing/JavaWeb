@@ -1,2 +1,8 @@
 eclipse.preferences.version=1
-encoding/<project>=gbk
+encoding//src/com=gbk
+encoding//src/com/dao=GBK
+encoding//src/com/dao/Anpai.java=gb2312
+encoding//src/com/dao/Sched.java=gb2312
+encoding//src/com/servlet/AdminServlet.java=gbk
+encoding//src/com/\u822A\u73ED\u8868.txt=gb2312
+encoding/src=gbk

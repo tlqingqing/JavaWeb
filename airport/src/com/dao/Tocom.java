@@ -17,9 +17,9 @@ public class Tocom
 		try
 		{
 			// 将传递进来的字符串转换成byte数组，并确定其编码
-			byte[] b = value.getBytes("ISO-8859-1");
+			byte[] b = value.getBytes("ISO-8859-1");//修改
 			// 用byte数组构造一个新的字符串，并指定其编码
-			cn = new String(b, "GBK");
+			cn = new String(b, "gbk");
 		}
 		catch (UnsupportedEncodingException e)
 		{

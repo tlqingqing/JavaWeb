@@ -1,5 +1,5 @@
 <%@page contentType="text/html"%>
-<%@page pageEncoding="GBK"%>
+<%@page pageEncoding="gb2312"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
@@ -59,8 +59,8 @@ body {
   <tr>
     <td height="30" align="center">起飞地点</td>
     <td><div align="center"><select name="Qifei" >
-                <option value="武汉">武汉</option>
-                <option value="北京">北京</option>
+                <option value="Wuhan">武汉</option>
+                <option value="Wuhan">北京</option>
                 <option value="上海">上海</option>
                 <option value="长沙">长沙</option>
                 <option value="深圳">深圳</option>   

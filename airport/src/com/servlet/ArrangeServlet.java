@@ -39,7 +39,7 @@ public class ArrangeServlet extends HttpServlet
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException
     {
-          response.setContentType("text/html;charset=UTF-8");
+          response.setContentType("text/html;charset=gb2312");
           PrintWriter out = response.getWriter();
           Anpai anpai=new Anpai();
           // 获得管理员所选择的航班号

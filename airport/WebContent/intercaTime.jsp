@@ -1,5 +1,5 @@
 <%@page contentType="text/html"%>
-<%@page pageEncoding="GBK"%>
+<%@page pageEncoding="gb2312"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
@@ -202,7 +202,7 @@ function copy()
    var year1=parseInt(ses.substring(0,ses.indexOf("-",0)));
    var month1=parseInt(ses.substring(ses.indexOf("-",0)+1,ses.indexOf("-",ses.indexOf("-",0)+1)));
    var date1=parseInt(ses.substring(ses.indexOf("-",ses.indexOf("-",0)+1)+1,ses.length));
-   if(year>year1)
+  /*  if(year>year1)
    {
       alert("日期不合法");
 	  return false;
@@ -223,11 +223,11 @@ function copy()
 		   }
 	   }
 	   else
-	   {}
+	   {} 
    }
    else
    {
-   }
+   }*/
 }
 </script>
 <body>
@@ -259,7 +259,7 @@ function copy()
       <td><div align="center">
          
      
-       <input type="text" name="user" id="indate" readonly  onClick="dateSelect('indate')" >
+       <input type="text" name="user" id="indate"  onClick="dateSelect('indate')" >
         </div></td>
     </tr>
   </table>
